@@ -1,7 +1,7 @@
 <h1>🌟 Healthcare Prediction System for Diabetic Patients <h1>
 
  
-![Healthcare Banner](assets/banner-image.jpg)
+
 
 Welcome to the **Healthcare Prediction System for Diabetic Patients**!  
 This web application leverages **machine learning** to predict whether an individual is diabetic based on their health parameters. It also provides dietary recommendations and health tips for diabetic individuals.  
@@ -37,7 +37,7 @@ This web application leverages **machine learning** to predict whether an indivi
 ## 📸 Screenshots  
 
 ### 1️⃣ Home Page  
-![Home Page](assets/homepage-screenshot.jpg)  
+![Home Page](https://github.com/Chandumeghanajogi/HealthCare_Prediction/blob/main/images1/home.jpeg?raw=true)  
 A welcoming page with a brief introduction to healthcare prediction.  
 
 ### 2️⃣ Prediction Page  
