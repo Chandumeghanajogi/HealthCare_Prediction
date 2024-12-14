@@ -1,0 +1,193 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f3f1; /* Cream color for background */
+}
+
+/* Header Section */
+header {
+    background-color: #f2d7d5; /* Light pink */
+    color: #2d3436;
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 3px solid #d1a1a0; /* Darker pink for border */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+    margin-top: 0;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Information Section */
+.info-section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-section h2 {
+    color: #2d3436;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.info-section ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.info-section ul li {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.info-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #a36481;
+}
+
+/* Form Section */
+.form-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2 {
+    font-size: 2rem;
+    color: #2d3436;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    color: #2d3436;
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 2px solid #d1cfcf; /* Soft grayish border */
+    margin-top: 6px;
+    box-sizing: border-box;
+    background-color: #fdfdfd;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #d78ba6; /* Teal border on focus */
+    box-shadow: 0 0 5px rgba(128, 59, 93, 0.5);
+}
+
+/* Button Styling */
+button {
+    background-color: #f2d7d5; /* Light pink */
+    color: #2d3436;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e1b0b0; /* Slightly darker pink */
+}
+
+/* Prediction Result Section */
+.result-section {
+    background-color: #ffffff;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.result-section h3 {
+    color: #2d3436;
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.result-section p {
+    font-size: 1.2rem;
+    color: #2d3436;
+    font-weight: bold;
+}
+
+/* Footer Section */
+footer {
+    background-color: #a35271; /* Teal */
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+
+
+
+
+/* Diet page button styling */
+.diet-button {
+    display: inline-block;
+    background-color: #f2d7d5; /* Light pink */
+    color: #2d3436;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s;
+    margin-top: 20px;
+}
+
+.diet-button:hover {
+    background-color: #e1b0b0;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Back link */
+.back-link {
+    display: block;
+    margin-top: 20px;
+    color: #a8d8d8; /* Teal */
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.back-link:hover {
+    color: #2d3436;
+}

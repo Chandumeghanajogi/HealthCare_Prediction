@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Prediction for Diabetic Patients</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <header>
+        <h1>Healthcare Prediction for Diabetic Patients</h1>
+        <p>Enter your details below to predict whether you might have diabetes.</p>
+    </header>
+
+    <div class="container">
+        <!-- Section with Information about Healthcare Prediction -->
+        <section class="info-section">
+            <h2>What is Healthcare Prediction for Diabetic Patients?</h2>
+            <p>This tool uses a machine learning model to predict whether a person is diabetic or non-diabetic based on various health metrics. The model uses several key indicators such as glucose levels, insulin levels, BMI, age, and more to assess the likelihood of diabetes.</p>
+            
+            <h3>Factors that affect the prediction:</h3>
+            <ul>
+                <li><strong>Pregnancies:</strong> The number of pregnancies a person has had.</li>
+                <li><strong>Glucose:</strong> Glucose level in the blood.</li>
+                <li><strong>Blood Pressure:</strong> The person's blood pressure levels.</li>
+                <li><strong>Skin Thickness:</strong> Skin thickness measured at the triceps.</li>
+                <li><strong>Insulin:</strong> Insulin level in the blood.</li>
+                <li><strong>BMI:</strong> Body Mass Index (a measure of body fat based on height and weight).</li>
+                <li><strong>Diabetes Pedigree Function:</strong> A measure of genetic predisposition to diabetes.</li>
+                <li><strong>Age:</strong> The person's age.</li>
+            </ul>
+            <p>By entering your data into the form below, you will receive a prediction on whether you are at risk of diabetes.</p>
+        </section>
+
+        <!-- Prediction Form -->
+        <section class="form-section">
+            <h2>Enter Your Details</h2>
+            <form action="/predict" method="POST">
+                <div class="form-group">
+                    <label for="pregnancies">Pregnancies:</label>
+                    <input type="number" id="pregnancies" name="pregnancies" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="glucose">Glucose:</label>
+                    <input type="number" id="glucose" name="glucose" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="bloodPressure">Blood Pressure:</label>
+                    <input type="number" id="bloodPressure" name="bloodPressure" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="skinThickness">Skin Thickness:</label>
+                    <input type="number" id="skinThickness" name="skinThickness" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="insulin">Insulin:</label>
+                    <input type="number" id="insulin" name="insulin" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="bmi">BMI:</label>
+                    <input type="number" id="bmi" name="bmi" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="diabetesPedigreeFunction">Diabetes Pedigree Function:</label>
+                    <input type="number" id="diabetesPedigreeFunction" name="diabetesPedigreeFunction" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+
+                <button type="submit">Predict</button>
+            </form>
+        </section>
+
+        <!-- Prediction Result Display -->
+        {% if prediction_text %}
+        <section class="result-section">
+            <h3>Prediction Result:</h3>
+            <p>{{ prediction_text }}</p>
+        </section>
+        {% endif %}
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Healthcare Prediction | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

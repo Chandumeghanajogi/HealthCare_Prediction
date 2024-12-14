@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Healthcare Prediction Result</h1>
+        <h1>{{ prediction_text }}</h1>
+
+        {% if is_diabetic %}
+            <div class="additional-info">
+                <h3>Diet and Health Recommendations for Diabetics:</h3>
+                <p>If you are diabetic, it's important to follow a proper diet and lifestyle.</p>
+                <a href="{{ url_for('diet') }}" class="diet-button">View Recommended Diet Plans</a>
+            </div>
+        {% endif %}
+        
+        <a href="{{ url_for('home') }}" class="back-link">Go Back</a>
+    </div>
+</body>
+</html>
