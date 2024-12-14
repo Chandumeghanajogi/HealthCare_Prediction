@@ -41,11 +41,11 @@ This web application leverages **machine learning** to predict whether an indivi
 A welcoming page with a brief introduction to healthcare prediction.  
 
 ### 2️⃣ Prediction Page  
-![Prediction Page](assets/prediction-form-screenshot.jpg)  
+![Prediction Page](https://github.com/Chandumeghanajogi/HealthCare_Prediction/blob/main/images1/prediction.jpeg?raw=true)  
 User-friendly form to input health metrics.  
 
 ### 3️⃣ Result Page  
-![Result Page](assets/result-screenshot.jpg)  
+![Result Page]()  
 Displays the prediction result with an option to view dietary plans for diabetic users.  
 
 ### 4️⃣ Diet Recommendations  
