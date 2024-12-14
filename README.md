@@ -46,11 +46,11 @@ User-friendly form to input health metrics.
 
 ### 3️⃣ Result Page  
 ![Result Page](https://github.com/Chandumeghanajogi/HealthCare_Prediction/blob/main/images1/nondiabetic.jpeg?raw=true)
-![Result Page]() 
+![Result Page](https://github.com/Chandumeghanajogi/HealthCare_Prediction/blob/main/images1/diabetic.jpeg?raw=true) 
 Displays the prediction result with an option to view dietary plans for diabetic users.  
 
 ### 4️⃣ Diet Recommendations  
-![Diet Page](assets/diet-page-screenshot.jpg)  
+![Diet Page]()  
 A visually appealing page with meal plans and tips.  
 
 ---
